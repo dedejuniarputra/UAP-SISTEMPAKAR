@@ -1,0 +1,11 @@
+
+/** image-bg css for Detox **/
+
+
+.preloader{
+  background-image:url(../images/preloader.gif);
+}
+
+.main_page.active_boxlayout{
+	background: url(../images/shape/pattern.jpg);
+}
