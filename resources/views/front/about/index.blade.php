@@ -4,22 +4,6 @@
 
 @section('content')
 
-<!--Page Title-->
-<section class="page-title bg-color-1 text-center">
-    <div class="pattern-layer" style="background-image: url(assets/images/shape/pattern-18.png);"></div>
-    <div class="auto-container">
-        <div class="content-box">
-            <h1>About Us</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="/">Home</a></li>
-                <li>About Us</li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!--End Page Title-->
-
-
 <!-- about-section -->
 <section class="about-section sec-pad">
     <div class="auto-container">

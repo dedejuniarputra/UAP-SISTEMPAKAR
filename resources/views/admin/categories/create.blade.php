@@ -6,7 +6,7 @@
 <div class="breadcrumb">
     <h1>Create Category</h1>
 </div>
-<div class="separator-breadcrumb border-top"></div><!-- end of main-content -->
+<div class="separator-breadcrumb border-top"></div>
 
 <div class="row">
     <div class="col-md-6">

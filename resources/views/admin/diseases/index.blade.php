@@ -27,7 +27,6 @@
                                 <th>Code</th>
                                 <th>Name</th>
                                 <th>Probability</th>
-                                <th>Appear</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -38,13 +37,10 @@
                                 <td>{{ $disease->code }}</td>
                                 <td>{{ $disease->name }}</td>
                                 <td>{{ $disease->probability }}</td>
-                                <td>{{ $disease->appear }}</td>
                                 <td>
-
                                     <a href="/admin/diseases/{{ $disease->id }}/edit" class="btn btn-primary btn-sm float-left mr-1">
                                         <i class="far fa-edit"></i>
                                     </a>
-
                                     <form action="/admin/diseases/{{ $disease->id }}" method="post">
                                         @csrf
                                         @method('delete')
@@ -56,31 +52,13 @@
                                 </td>
                             </tr>
                             @endforeach
-
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No</th>
-                                <th>Code</th>
-                                <th>Name</th>
-                                <th>Created at</th>
-                                <th>Updated at</th>
-                                <th>Actions</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="col-md-12 mb-4">
-        <div class="card text-left">
-            <div class="card-body">
-                Total Jumlah Muncul :
-            </div>
-        </div>
-    </div>
 </div>
 @endsection
 

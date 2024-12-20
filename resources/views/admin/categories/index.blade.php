@@ -11,7 +11,7 @@
     <h1>Categories | </h1>
     <a href="/admin/categories/create" class="btn btn-primary btn-sm">Create</a>
 </div>
-<div class="separator-breadcrumb border-top"></div><!-- end of main-content -->
+<div class="separator-breadcrumb border-top"></div>
 
 <div class="row">
     <div class="col-md-12 mb-4">

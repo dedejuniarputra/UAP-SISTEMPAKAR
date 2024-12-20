@@ -31,9 +31,6 @@ Route::group(
         Route::resource('rules', 'RulesController');
         Route::resource('categories', 'CategoriesController');
         Route::resource('tags', 'TagsController');
-
-        Route::get('/profile', 'SettingsController@profile');
-        Route::patch('/profile/update', 'SettingsController@profileUpdate');
         Route::get('/password', 'SettingsController@password')->name('backend.password');
         Route::patch('/updatePassword', 'SettingsController@updatePassword')->name('backend.updatePassword');
     }
@@ -49,9 +46,6 @@ Route::group(
     ],
     function () {
         Route::get('dashboard', 'DashboardController@index')->name('dashboard');
-
-        Route::get('/profile', 'SettingsController@profile');
-        Route::patch('/profile/update', 'SettingsController@profileUpdate');
         Route::get('/password', 'SettingsController@password')->name('users.password');
         Route::patch('/updatePassword', 'SettingsController@updatePassword')->name('users.updatePassword');
 
@@ -59,8 +53,6 @@ Route::group(
         Route::get('/diagnosis', 'DiagnosisController@index')->name('users.diagnosis');
         Route::post('/diagnosis/proccess', 'DiagnosisController@proccess')->name('diagnosis.proccess');
         Route::get('/diagnosis/results', 'DiagnosisController@results')->name('diagnosis.results');
-        // END::diagnosis
-
         // consultations
         Route::get('/consultations', 'ConsultationsController@usersConsultations')->name('consultations');
         Route::get('/consultations/{consultations:id}', 'ConsultationsController@usersConsultationsDetail')->name('consultations.detail');
@@ -80,12 +72,6 @@ Route::group(
         // category and tag
         Route::get('/category/{slug}', 'PostsController@postsByCategory');
         Route::get('/tag/{slug}', 'PostsController@postsByTag');
-        // END::category and tag
-
-        // Front - Route Blog Comment
-        Route::post('/blog/comments/{post}', 'CommentController@store');
-        // END::Front - Route Blog Comment
-
         // Front - Route Blog Search
         Route::get('/search', 'PostsController@blogSearch')->name('blog.search');
         // END::Front - Route Blog Search

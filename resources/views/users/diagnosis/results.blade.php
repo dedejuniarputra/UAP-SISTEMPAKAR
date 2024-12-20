@@ -19,7 +19,7 @@
                         <div class="ul-widget__content">
                             @foreach ($diagnosisMax as $diagnosaMax)
                             <p class="m-0">{{ $diagnosaMax->name }}</p>
-                            <h4 class="heading">{{ floor($diagnosaMax->results * 100) }}%</h4>
+                            <h4 class="heading">{{ floor($diagnosaMax->results * 1000) }}%</h4>
                             @endforeach
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $diagnosa->code }}</td>
                                     <td>{{ $diagnosa->name }}</td>
-                                    <td>{{ floor($diagnosa->results * 100) }}%</td>
+                                    <td>{{ floor($diagnosa->results * 1000) }}%</td>
                                 </tr>
                             @endforeach
                             
