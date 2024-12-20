@@ -276,6 +276,8 @@ class DiagnosisController extends Controller
 
         $totalProbability = array_sum($data);
 
+        $scalingFactor = 1000;
+
         $gagalGinjal = ($probGagalGinjal / $totalProbability);
         $kankerGinjal = ($probKankerGinjal / $totalProbability);
         $infeksiGinjal = ($probInfeksiGinjal / $totalProbability);
@@ -306,11 +308,12 @@ class DiagnosisController extends Controller
             Consultation::create([
                 'user_id' => Auth::user()->id,
                 'disease' => $diagnosaMax->name,
-                'score' => floor($diagnosaMax->results * 1000),
+                'score' => floor($diagnosaMax->results * 100),
                 'information' => $diagnosaMax->information,
                 'suggestion' => $diagnosaMax->suggestion
             ]);
         }
+        
 
         return redirect('/users/diagnosis/results')->with('toast_success', Auth::user()->name . ' Berhasil Mendiagnosa');
     }

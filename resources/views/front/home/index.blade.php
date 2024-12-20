@@ -10,7 +10,11 @@
     <div class="auto-container">
         <div class="content-box">
             <div class="text-box">
+<<<<<<< HEAD
                 <h1>Sistem Pakar Diagnosa Penyakit Ginjal</h1>
+=======
+                <h1>Sistem Pakar Diagnosa Penyakit Ginjal Dengan Menggunakan Algoritma Bayes</h1>
+>>>>>>> master
             </div>
             <div class="image-box">
                 <div class="pattern-layer" style="background-image: url({{ asset('assets/frontend') }}/images/shape/pattern-9.png);"></div>
