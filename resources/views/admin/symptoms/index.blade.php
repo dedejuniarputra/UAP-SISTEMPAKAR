@@ -54,18 +54,7 @@
                                 </td>
                             </tr>
                             @endforeach
-
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No</th>
-                                <th>Code</th>
-                                <th>Name</th>
-                                <th>Created at</th>
-                                <th>Updated at</th>
-                                <th>Actions</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>

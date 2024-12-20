@@ -8,10 +8,10 @@
                 <div class="col-lg">
                     <div class="p-4">
 
-                        <div class="auth-logo text-center mb-4">
-                            <img src="{{ asset('assets/backend') }}/images/logo.png">
+                        <div class="logo">
+                            <span style="font-size: 24px; font-weight: bold; color: purple;"><center>CekGinjal</center></span>
                         </div>
-
+                        
                         <h1 class="mb-3 text-18">Sign In</h1>
 
                         <form method="POST" action="{{ route('login') }}">

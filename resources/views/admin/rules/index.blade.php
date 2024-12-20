@@ -57,15 +57,6 @@
                                 @endforeach
 
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No</th>
-                                <th>Penyakit</th>
-                                <th>Gejala</th>
-                                <th>Probabilitas</th>
-                                <th>Actions</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
