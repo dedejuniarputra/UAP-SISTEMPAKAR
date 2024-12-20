@@ -308,7 +308,7 @@ class DiagnosisController extends Controller
             Consultation::create([
                 'user_id' => Auth::user()->id,
                 'disease' => $diagnosaMax->name,
-                'score' => round($diagnosaMax->results, 2), // Pastikan menggunakan pembulatan
+                'score' => floor($diagnosaMax->results * 100),
                 'information' => $diagnosaMax->information,
                 'suggestion' => $diagnosaMax->suggestion
             ]);
